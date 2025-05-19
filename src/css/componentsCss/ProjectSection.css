@@ -1,0 +1,25 @@
+.project-section {
+    padding: 100px 150px 50px;
+    width: 100%;
+    height: auto;
+}
+
+.project-heading {
+    width: 100%;
+    height: auto;
+
+    p {
+        opacity: 0.3;
+    }
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container p {
+    font-size: 250px;
+    transform: rotate(-4deg);
+}

@@ -1,0 +1,20 @@
+.scroll-tilt {
+  transform-style: preserve-3d;
+  will-change: transform;
+  transition: transform 0.3s ease-out;
+  perspective: 1000px;
+}
+
+.scroll-shift {
+  will-change: transform;
+  transition: transform 0.1s ease-out;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}

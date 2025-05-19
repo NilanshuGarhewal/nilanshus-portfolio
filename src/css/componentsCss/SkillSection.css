@@ -1,0 +1,80 @@
+.skill-section {
+  width: 100vw;
+  height: auto;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 150px 50px;
+}
+
+.heading p {
+  width: 50%;
+  opacity: 0.3;
+}
+
+.fadeout-horizontal {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    var(--c-primary) 5rem,
+    var(--c-primary) calc(100% - 5rem),
+    transparent
+  );
+}
+
+
+.float-heading {
+  margin: 100px 0 100px;
+
+  width: 100%;
+  height: auto;
+  /* padding: 2.4rem 0; */
+  /* background-color: red; */
+}
+
+.marquee-text {
+  overflow: clip;
+  margin-top: 20px;
+  cursor: default;
+}
+
+.marquee-text-track {
+  display: flex;
+  padding-left: 2.4rem;
+  gap: 2.4rem;
+  width: max-content;
+  animation: marquee-move-text 25s linear infinite;
+}
+
+.marquee-text-track-2 {
+  display: flex;
+  padding-left: 2.4rem;
+  gap: 2.4rem;
+  width: max-content;
+  animation: marquee-move-text 25s linear infinite reverse;
+}
+
+.item {
+  border: 2px solid white;
+  border-radius: 999px;
+  padding: .5rem 1.75rem;
+  background-color: var(--c-primary);
+  font-size: 26px;
+}
+
+@keyframes marquee-move-text {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.rotate-left {
+transform: rotate(-8deg);
+}
+
+
+.rotate-right {
+transform: rotate(10deg) translateY(-20px);
+}

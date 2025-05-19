@@ -1,0 +1,83 @@
+#bg-lines {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+#line1 {
+  width: 2px;
+  height: 100vw;
+  background: #ffffff;
+  opacity: 0.05;
+  position: fixed;
+  left: 100px;
+}
+
+#line2 {
+  width: 2px;
+  height: 100vw;
+  background: #ffffff;
+  opacity: 0.05;
+  position: fixed;
+  right: 100px;
+}
+
+#line3 {
+  width: 100vw;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0.05;
+  position: fixed;
+  top: 150px;
+  left: 100px;
+}
+
+/* mid line */
+#line4 {
+  width: 2px;
+  height: 100vw;
+  background: #ffffff;
+  opacity: 0.05;
+  position: fixed;
+  left: 750px;
+}
+
+#line5 {
+  width: 2px;
+  height: 100vw;
+  background: #ffffff;
+  opacity: 0.05;
+  position: fixed;
+  left: 890px;
+}
+
+#line6 {
+  width: 515px;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0.05;
+  position: fixed;
+  top: 400px;
+  left: 890px;
+}
+
+#line7 {
+  width: 140px;
+  height: 2px;
+  background: #ffffff;
+  opacity: 0.05;
+  position: fixed;
+  top: 700px;
+  left: 750px;
+}
+
+/* #line8 {
+    width: 100vw;
+    height: 2px;
+    rotate: -45deg;
+    background: #ffffff;
+    opacity: 0.05;
+    position: fixed;
+    top: 50vw;
+    left: 100px;
+} */

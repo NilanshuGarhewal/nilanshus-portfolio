@@ -1,0 +1,88 @@
+.hero-link-section {
+  width: 100vw;
+  height: 280px;
+  padding: 150px;
+  padding-bottom: 50px;
+  display: flex; 
+  justify-content: space-evenly;
+  font-size: 1rem;
+  /* background-color: red; */
+}
+
+.hero-link-one {
+  width: 50%;
+  height: 100%;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  /* background-color: blue; */
+}
+
+.hero-link-one a {
+  display: flex;
+  text-decoration: none;
+  color: var(--c-secondary);
+  transition: color ease-in-out 0.3s;
+  position: relative;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 👇 The wrapper that holds both arrows */
+.arrow-ke-papa {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+/* 👇 Shared arrow styles */
+.arrow-tr {
+  position: absolute;
+  left: 0;
+  top: 0;
+  rotate: 180deg;
+  transition: all 0.3s ease;
+}
+
+/* 👇 Default arrow visible */
+.arrow-tr-default {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 👇 Hover arrow hidden below */
+.arrow-tr-hover {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+/* 👇 On hover, swap arrows */
+.hero-link-one a:hover .arrow-tr-default {
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.hero-link-one a:hover .arrow-tr-hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 👇 Optional hover color */
+.hero-link-one a:hover {
+  color: var(--c-orange);
+}
+
+.hero-link-two {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.hero-link-two p {
+  line-height: 25px;
+}
