@@ -18,9 +18,10 @@ import ProjectSection from "./components/ProjectSection";
 import Footer from "./components/Footer";
 import BgLines from "./components/extra/BgLines";
 import Cursor from "./components/extra/Cursor";
+import { Background } from "./components/extra/Background";
 
 // Importing gsap animations
-import { setupGsapAnimations, killGsapAnimations } from "./js/gsapAnimations";
+// import { setupGsapAnimations, killGsapAnimations } from "./js/gsapAnimations";
 
 // ------------------------------------------------
 // ------------------------------------------------
@@ -36,17 +37,18 @@ function App() {
       easing: "ease-in-out",
     });
 
-    setupGsapAnimations();
+    // setupGsapAnimations();
 
-    return () => {
-      killGsapAnimations();
-    };
+    // return () => {
+    //   killGsapAnimations();
+    // };
   }, []);
 
   return (
     <ParallaxProvider>
       <Cursor />
-      <BgLines />
+      {/* {<BgLines />} */}
+      {/* <Background></Background> */}
       <div>
         <Navbar />
         <div>

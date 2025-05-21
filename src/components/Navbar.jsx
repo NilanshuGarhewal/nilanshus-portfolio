@@ -1,42 +1,22 @@
 import "../css/componentsCss/navbar.css";
+import NavbarTools from "./subcomponents/NavbarTools";
+import "../css/extraCss/earthquake.css";
 
 export default function Navbar() {
   // NAVBAR SECTION
 
   return (
     <div className="navbar">
-      <a href="#home-pe-ja" className="link-hai-ye">
-        <div className="logo">
-          <p>Nilanshu</p>
-        </div>
+      <a href="#home-pe-ja" className="my-name earthquake">
+        <span>NILANSHU</span>
       </a>
 
-      <div className="tools">
-        <a href="#about" className="link-hai-ye">
-          <div className="tool-container">
-            <div className="dot-select"></div>
-            <p>about</p>
-          </div>
-        </a>
-        <a href="#projects" className="link-hai-ye">
-          <div className="tool-container">
-            <div className="dot-select"></div>
-            <p>projects</p>
-          </div>
-        </a>
-        <a href="#skills" className="link-hai-ye">
-          <div className="tool-container">
-            <div className="dot-select"></div>
-            <p>skills</p>
-          </div>
-        </a>
-      </div>
+      <span id="slide-tool">
+        <NavbarTools />
+      </span>
 
-      <a href="#footer" className="link-hai-ye">
-        <div className="contact">
-          <div className="dot-select"></div>
-          <p>contact</p>
-        </div>
+      <a href="#footer" className="contact-tool earthquake">
+        <span>CONTACT</span>
       </a>
     </div>
   );

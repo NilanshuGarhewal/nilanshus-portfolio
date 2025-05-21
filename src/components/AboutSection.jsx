@@ -53,7 +53,7 @@ export default function AboutSection() {
           </p>
         </Parallax>
 
-        <Parallax speed={-10}>
+        <Parallax speed={-7}>
           <p id="num">
             1 <br />
             2 <br />

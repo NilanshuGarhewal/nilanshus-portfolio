@@ -34,9 +34,7 @@ export default function SkillSection() {
         <SkillSec skill={skillsTwo} skillHeading={skillHead[1]}></SkillSec>
       </Parallax>
 
-      {/* floating text move right to left ininite times */}
-
-      <Parallax speed={3}>
+      <Parallax speed={0}>
         <div className="float-heading">
           <div className="marquee-text rotate-left fadeout-horizontal">
             <div className="marquee-text-track">
