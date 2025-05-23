@@ -1,20 +1,22 @@
 .project-section {
-  padding: 0 150px 0;
+  padding: 60px 150px 50px;
   width: 100%;
   height: auto;
+  background-color: var(--c-secondary);
 }
 
 .project-heading {
   width: 100%;
   height: auto;
-
-  p {
-    opacity: 0.3;
-  }
 }
 
+.project-heading p {
+  opacity: 0.3;
+  color: var(--c-black);
+}
 .all-projects > p {
   margin: 50px 0;
+  color: var(--c-black);
 }
 
 .project-container {

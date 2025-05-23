@@ -1,12 +1,30 @@
-.hero-link-section {
+.hero-section-part-one {
   width: 100vw;
-  height: 280px;
-  padding: 150px;
-  padding-bottom: 50px;
+  height: 50%;
+  padding: 0 150px;
   display: flex; 
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1rem;
-  /* background-color: red; */
+}
+
+#profession {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#profession span {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow-up {
+  transform: rotate(180deg);
+}
+
+.hero-section-part-one p {
+  font-size: 30px;
 }
 
 .hero-link-one {
@@ -85,4 +103,7 @@
 
 .hero-link-two p {
   line-height: 25px;
+  text-transform: capitalize;
+  font-weight: 500;
+  letter-spacing: 1px;
 }

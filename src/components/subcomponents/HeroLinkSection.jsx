@@ -1,49 +1,22 @@
 import { ArrowDownLeft } from "phosphor-react";
 import "../../css/subcomponentsCss/HeroLinkSection.css";
-import Button from "../extra/Button";
 import { Parallax } from "react-scroll-parallax";
 import "../../css/extraCss/earthquake.css";
+import MagneticButton from "../extra/MagneticButton";
 
 export default function HeroLinkSection() {
   return (
-    <div className="hero-link-section" id="home-pe-ja">
-      <div className="hero-link-one">
-        <a href="#" className="earthquake">
-          <p>linkedin</p>
-          <div className="arrow-ke-papa">
-            <ArrowDownLeft size={20} className="arrow-tr arrow-tr-default" />
-            <ArrowDownLeft size={20} className="arrow-tr arrow-tr-hover" />
-          </div>
-        </a>
+    <div className="hero-section-part-one" id="home-pe-ja">
+      <span id="profession">
+        <span>
+          <p>Creator</p>
+          <ArrowDownLeft className="arrow-up" size={30} />
+        </span>
+        <p>Designer & Developer</p>
+      </span>
 
-        <a href="#" className="earthquake">
-          <p>e-mail</p>
-          <div className="arrow-ke-papa">
-            <ArrowDownLeft size={20} className="arrow-tr arrow-tr-default" />
-            <ArrowDownLeft size={20} className="arrow-tr arrow-tr-hover" />
-          </div>
-        </a>
-
-        <a href="#" className="earthquake">
-          <p>artist</p>
-          <div className="arrow-ke-papa">
-            <ArrowDownLeft size={20} className="arrow-tr arrow-tr-default" />
-            <ArrowDownLeft size={20} className="arrow-tr arrow-tr-hover" />
-          </div>
-        </a>
-      </div>
-
-      <div className="hero-link-two">
-        <p>
-          nilanshu garhewal <br />
-          web developer & ui / ux designer <br />
-          based in bhopal, india
-        </p>
-
-        <Parallax speed={-5}>
-          <Button></Button>
-        </Parallax>
-      </div>
+      {/* <Button></Button> */}
+      <MagneticButton children={"Get In Touch"}></MagneticButton>
     </div>
   );
 }

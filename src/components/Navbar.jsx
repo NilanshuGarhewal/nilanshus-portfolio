@@ -1,23 +1,19 @@
 import "../css/componentsCss/navbar.css";
 import NavbarTools from "./subcomponents/NavbarTools";
-import "../css/extraCss/earthquake.css";
+import Magnetic from "./extra/Magnetic";
 
 export default function Navbar() {
   // NAVBAR SECTION
 
   return (
     <div className="navbar">
-      <a href="#home-pe-ja" className="my-name earthquake">
-        <span>NILANSHU</span>
-      </a>
+      <Magnetic>
+        <a href="#home-pe-ja" className="my-name">
+          <span>Nilanshu Garhewal</span>
+        </a>
+      </Magnetic>
 
-      <span id="slide-tool">
-        <NavbarTools />
-      </span>
-
-      <a href="#footer" className="contact-tool earthquake">
-        <span>CONTACT</span>
-      </a>
+      <NavbarTools />
     </div>
   );
 }

@@ -50,12 +50,14 @@ function App() {
       {/* {<BgLines />} */}
       {/* <Background></Background> */}
       <div>
-        <Navbar />
+        <ParallaxProvider speed={0}>
+          <Navbar />
+        </ParallaxProvider>
         <div>
           <HeroSection />
           <AboutSection />
           <ProjectSection />
-          <SkillSection />
+          {/* <SkillSection /> */}
           <Footer />
         </div>
       </div>

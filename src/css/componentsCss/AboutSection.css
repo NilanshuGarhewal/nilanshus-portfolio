@@ -1,95 +1,61 @@
 .about-section {
-    padding: 50px 150px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
+  width: 100vw;
+  height: auto;
+  padding: 100px 150px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c-secondary);
+  color: var(--c-primary);
 }
 
-.about-info {
-    width: 60%;
-    height: auto;
+#about-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-#about-info-nil {
-    font-size: 30px;
-    margin: 50px 0;
-    font-family: "Montserrant", sans-serif;
-    font-style: italic;
-    font-size: 300;
+.about-me {
+  /* background-color: rosybrown; */
+  width: 60%;
+  height: auto;
 }
 
-.about-name {
-    width: 40%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-me > p {
+  font-size: 1.75rem;
 }
 
-#abc {
-    font-size: 100px;
+.about-me2 {
+  /* background-color: red; */
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
 }
 
-#num {
-    font-size: 20px;
-    line-height: 100px;
-    opacity: .3;
-  }
-  
-  #about-nil {
-    font-size: 1rem;
-    opacity: 0.3;
-  }
+.about-heading {
+  width: 100%;
+  height: 100%;
+  /* background-color: lightcoral; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0 0;
+}
 
-/* .about-section {
-    padding: 50px 150px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-  }
-  
-  .about-info {
-    width: 60%;
-    height: auto;
-  }
-  
-  
-  #about-info-nil {
-    font-size: 30px;
-    margin: 50px 0;
-    font-family: "Montserrat", sans-serif;
-    font-style: italic;
-    font-weight: 300;
-  }
-  
-  .about-word {
-    display: inline-block;
-    opacity: 0;
-  }
-  
-  .about-name {
-    width: 40%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  #abc {
-    font-size: 100px;
-  }
-  
-  #num {
-    font-size: 20px;
-    line-height: 100px;
-    opacity: 0.3;
-  }
-  
-  .about-word {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-   */
+.about-heading span {
+  width: 200px;
+  height: 80px;
+  background-color: var(--c-black);
+  color: var(--c-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  font-weight: 500;
+}

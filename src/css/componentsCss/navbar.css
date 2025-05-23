@@ -1,13 +1,10 @@
 .navbar {
   width: auto;
-  height: 50px;
-  padding: 0 1.6rem;
+  height: 100px;
+  padding: 0 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 999;
 }
 
 .my-name {
@@ -20,36 +17,5 @@
 .my-name span {
   color: var(--c-secondary);
   font-size: 1rem;
-}
-
-.my-name:hover span {
-  opacity: 1;
-  color: var(--c-orange);
-}
-
-.contact-tool {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-
-.contact-tool span {
-  color: var(--c-secondary);
-  font-size: 1rem;
-  opacity: 0.3;
-}
-
-.contact-tool:hover span {
-  opacity: 1;
-  color: var(--c-orange);
-}
-
-#slide-tool {
-  transform: translateY(-40px);
-  transition: transform 0.5s ease;
-}
-
-.navbar:hover #slide-tool {
-  transform: translateY(0);
+  font-weight: 500;
 }

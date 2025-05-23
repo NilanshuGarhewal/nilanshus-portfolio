@@ -1,68 +1,34 @@
 import "../css/componentsCss/AboutSection.css";
+import "../components/extra/MagneticButton";
 import { Parallax } from "react-scroll-parallax";
+import MagneticButton from "../components/extra/MagneticButton";
 
 // data-aos="fade-right" data-aos-offset="200"
 
 export default function AboutSection() {
   return (
     <div className="about-section" id="about">
-      <div className="about-info">
-        <Parallax speed={-3}>
-          <p id="about-nil">About Nilanshu</p>
-        </Parallax>
-
-        <Parallax speed={-3}>
-          <p id="about-info-nil">
-            Full-stack developer, blending code <br />
-            and creativity to build modern, scalable
-            <br />
-            web apps and digital experiences. Skilled in
-            <br />
-            front-end and back-end development,
-            <br />
-            with a growing flair for UI/UX design,
-            <br />
-            app architecture, and interactive interfaces.
-            <br />
-            ⁣<br />
-            Focused on delivering fast, responsive,
-            <br />
-            and user-focused solutions. Collaborates
-            <br />
-            seamlessly with designers, developers, and
-            <br />
-            stakeholders to solve real-world problems
-            <br />
-            with clean, efficient code and intuitive
-            <br />
-            design systems.
+      <span id="about-container">
+        <div className="about-me">
+          <p id="about-part-one">
+            Full-stack developer blending code and creativity to build modern,
+            scalable web apps. Skilled in both front-end and back-end, with a
+            growing passion for UI/UX, app architecture, and interactive design.
           </p>
-        </Parallax>
+        </div>
 
-        <p id="idk">@ 2025 EST.2023</p>
-      </div>
+        <div className="about-me2">
+          Focused on fast, user-friendly solutions and clean code. Works closely
+          with teams to turn real-world problems into intuitive digital
+          experiences.
+        </div>
+      </span>
 
-      <div className="about-name">
-        <Parallax speed={-3}>
-          <p id="abc">
-            A <br />
-            B <br />
-            O <br />
-            U <br />
-            T <br />
-          </p>
-        </Parallax>
+      {/* <div className="about-heading">
+        <span>About Me</span>
+      </div> */}
 
-        <Parallax speed={-7}>
-          <p id="num">
-            1 <br />
-            2 <br />
-            3 <br />
-            4 <br />
-            5 <br />
-          </p>
-        </Parallax>
-      </div>
+      <MagneticButton children={"About Me"}></MagneticButton>
     </div>
   );
 }

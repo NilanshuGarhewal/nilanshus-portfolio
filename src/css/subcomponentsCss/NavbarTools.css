@@ -15,21 +15,41 @@
 }
 
 .tool-link {
-  margin: 0 20px;
+  padding: 0 1.6rem;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .tool-link span {
   display: inline-block;
   color: var(--c-secondary);
   font-size: 1rem;
-  transition: transform 0.1s linear;
-  opacity: .3;
+  transition: all 0.1s linear;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
-.tool-link:hover span {
-  opacity: 1;
-  color: var(--c-orange);
+.nav-dot {
+  width: 0;
+  height: 0;
+  background: var(--c-secondary);
+  border-radius: 999px;
+  margin-top: 10px;
+  visibility: hidden;
+  transition: width 0.15s ease-out, height 0.15s ease-out;
+  position: absolute;
+  top: 10%;
+}
+
+.tool-link:hover .nav-dot {
+  visibility: visible;
+  width: 5px;
+  height: 5px;
 }
