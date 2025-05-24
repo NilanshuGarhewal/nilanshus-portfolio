@@ -1,8 +1,7 @@
 import { ArrowDownLeft } from "phosphor-react";
-import "../../css/subcomponentsCss/HeroLinkSection.css";
+import "./HeroLinkSection.css";
 import { Parallax } from "react-scroll-parallax";
-import "../../css/extraCss/earthquake.css";
-import MagneticButton from "../extra/MagneticButton";
+import MagneticButton from "../Button/MagneticButton";
 
 export default function HeroLinkSection() {
   return (
@@ -16,7 +15,7 @@ export default function HeroLinkSection() {
       </span>
 
       {/* <Button></Button> */}
-      <MagneticButton children={"Get In Touch"}></MagneticButton>
+      <MagneticButton children={"Artist"}></MagneticButton>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import "../../css/subcomponentsCss/NavbarTools.css";
-import Magnetic from "../extra/Magnetic";
+import "./NavbarTools.css";
+import Magnetic from "../Button/Magnetic";
 
 export default function NavbarTools() {
   return (

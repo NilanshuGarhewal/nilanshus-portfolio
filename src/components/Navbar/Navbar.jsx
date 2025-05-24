@@ -1,6 +1,6 @@
-import "../css/componentsCss/navbar.css";
-import NavbarTools from "./subcomponents/NavbarTools";
-import Magnetic from "./extra/Magnetic";
+import "./Navbar.css";
+import NavbarTools from "./NavbarTools";
+import Magnetic from "../Button/Magnetic";
 
 export default function Navbar() {
   // NAVBAR SECTION

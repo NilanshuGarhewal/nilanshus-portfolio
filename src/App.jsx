@@ -10,18 +10,14 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import "./css/App.css";
 
 // Importing JSX files
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import AboutSection from "./components/AboutSection";
-import SkillSection from "./components/SkillSection";
-import ProjectSection from "./components/ProjectSection";
-import Footer from "./components/Footer";
-import BgLines from "./components/extra/BgLines";
-import Cursor from "./components/extra/Cursor";
-import { Background } from "./components/extra/Background";
-
-// Importing gsap animations
-// import { setupGsapAnimations, killGsapAnimations } from "./js/gsapAnimations";
+import Navbar from "./components/Navbar/Navbar";
+import HeroSection from "./components/HeroSection/HeroSection";
+import AboutSection from "./components/AboutSection/AboutSection";
+import SkillSection from "./components/SkillSection/SkillSection";
+import ProjectSection from "./components/ProjectSection/ProjectSection";
+import Footer from "./components/Footer/Footer";
+import Cursor from "./components/Cursor/Cursor";
+import { Background } from "./components/Background/Background";
 
 // ------------------------------------------------
 // ------------------------------------------------
@@ -47,7 +43,6 @@ function App() {
   return (
     <ParallaxProvider>
       <Cursor />
-      {/* {<BgLines />} */}
       {/* <Background></Background> */}
       <div>
         <ParallaxProvider speed={0}>

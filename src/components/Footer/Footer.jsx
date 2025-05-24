@@ -1,44 +1,8 @@
-import "../css/componentsCss/Footer.css";
+import "./Footer.css";
 import { ArrowDownLeft } from "phosphor-react";
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Parallax } from "react-scroll-parallax";
-import useMagneticButton from "../js/useMagneticButton"; // Adjust path if needed
-
-// Register GSAP ScrollTrigger plugin once
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Footer() {
-  const btnRef = useRef(null); // Ref to the Contact button
-  const magneticEffectRef = useRef(null); // Ref to magnetic effect div inside button
-
-  // Animate underline lines on scroll
-  useEffect(() => {
-    const lines = gsap.utils.toArray(".f-line");
-
-    lines.forEach((line) => {
-      gsap.fromTo(
-        line,
-        { height: 1 },
-        {
-          width: "100%",
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: line,
-            start: "top 90%",
-            toggleActions: "play none none none",
-          },
-          transformOrigin: "bottom",
-        }
-      );
-    });
-  }, []);
-
-  // Apply magnetic button effect using custom hook
-  useMagneticButton(btnRef, magneticEffectRef);
-
   return (
     <div className="footer" id="footer">
       <div className="fb1">
@@ -49,8 +13,8 @@ export default function Footer() {
         </p>
 
         <Parallax speed={-5}>
-          <button id="c-btn" ref={btnRef}>
-            <div className="magnetic" ref={magneticEffectRef} />
+          <button id="c-btn">
+            <div className="magnetic" />
             Contact
           </button>
         </Parallax>

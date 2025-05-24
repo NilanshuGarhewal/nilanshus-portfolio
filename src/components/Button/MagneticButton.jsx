@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "../../css/extraCss/MagneticButton.css";
+import "./MagneticButton.css";
 import gsap from "gsap";
 import Magnetic from "./Magnetic";
 

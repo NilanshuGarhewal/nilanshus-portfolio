@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "../../css/extraCss/Background.css";
+import "./Background.css";
 
 export function Background() {
   const blockContainerRef = useRef(null);

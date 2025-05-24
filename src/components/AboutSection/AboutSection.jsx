@@ -1,7 +1,6 @@
-import "../css/componentsCss/AboutSection.css";
-import "../components/extra/MagneticButton";
+import "./AboutSection.css";
+import MagneticButton from "../Button/MagneticButton";
 import { Parallax } from "react-scroll-parallax";
-import MagneticButton from "../components/extra/MagneticButton";
 
 // data-aos="fade-right" data-aos-offset="200"
 

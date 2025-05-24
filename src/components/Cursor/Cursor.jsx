@@ -1,6 +1,6 @@
-import "../../css/extraCss/Cursor.css";
+import "./Cursor.css";
 import { useEffect, useRef, useState } from "react";
-import { setupCustomCursor } from "../../js/cursorLogic";
+import { setupCustomCursor } from "./cursorLogic";
 
 const CustomCursor = () => {
   const cursorRef = useRef(null);

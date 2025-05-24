@@ -1,5 +1,5 @@
-import SkillSec from "./subcomponents/SkillSec";
-import "../css/componentsCss/SkillSection.css";
+import SkillSec from "./SkillSec";
+import "./SkillSection.css";
 import { Parallax } from "react-scroll-parallax";
 
 export default function SkillSection() {

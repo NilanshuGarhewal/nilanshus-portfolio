@@ -1,10 +1,10 @@
 // SkillSec.jsx
-import "../../css/subcomponentsCss/SkillSec.css";
+import "./SkillSec.css";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Parallax } from "react-scroll-parallax";
-import skillSectionAnimation from "../../js/skillSectionAnimation"; // Custom animation logic
+import skillSectionAnimation from "./skillSectionAnimation"; // Custom animation logic
 
 // Register ScrollTrigger plugin for GSAP
 gsap.registerPlugin(ScrollTrigger);

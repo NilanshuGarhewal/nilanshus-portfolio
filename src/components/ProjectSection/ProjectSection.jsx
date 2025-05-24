@@ -1,4 +1,4 @@
-import "../css/componentsCss/ProjectSection.css";
+import "./ProjectSection.css";
 import { use, useEffect, useRef } from "react";
 
 export default function ProjectSection() {
@@ -13,10 +13,6 @@ export default function ProjectSection() {
           All the projects will be uploaded soon, until you can take a look at
           my GitHub!
         </p>
-        {/* 
-        <div className="project-container">
-          <p>hello</p>
-        </div> */}
       </div>
     </div>
   );

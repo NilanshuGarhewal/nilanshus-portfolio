@@ -1,6 +1,6 @@
-import HeroLinkSection from "./subcomponents/HeroLinkSection";
-import HeroNameSection from "./subcomponents/HeroNameSection";
-import "../css/componentsCss/HeroSection.css"
+import HeroLinkSection from "./HeroLinkSection";
+import HeroNameSection from "./HeroNameSection";
+import "./HeroSection.css"
 
 export default function HeroSection() {
   return (
